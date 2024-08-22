@@ -2,6 +2,7 @@ import EditForm from '@/components/EditForm'
 import Link from 'next/link'
 import React from 'react'
 import { getTask } from '@/utils/action'
+// export const dynamic = 'force-dynamic'  //else might get unsynchronized tasks
 
 export default async function SingleTaskPage({params}) {
     const task = await  getTask(params.id)

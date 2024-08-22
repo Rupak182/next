@@ -20,3 +20,6 @@ model Task{
   createdAt DateTime @default(now())
   completed Boolean @default(false)
 }
+
+// circle ones are prerendered as static html -> generated once during build processs
+// f -> generated on demand  (dynamic page) // still caching is done 
